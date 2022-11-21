@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary:#851151;
+    --secondary:#f587d4;
+    --ternary:#eec4e5;
+    --error:rgba(173, 17, 17, 0.822);
+    --submit:#198754;
+
+
+}
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+body{
+    background-color: var(--ternary);
+}
+
+.dynamic{
+    text-align: center;
+    margin:2rem;
+}
+
+.header{
+  
+    margin: 0 auto;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    
+}
+
+header h1{
+    font-family: 'Great Vibes', cursive;
+    color: var(--primary);
+    font-size: 50px;
+}
+
+input{
+    padding:10px;
+    font-size: 20px;
+    outline: none;
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 1px solid var(--primary);
+    color:grey;
+    margin-top: 10px;
+}
+
+select{
+    
+        padding:10px;
+        font-size: 20px;
+        outline: none;
+        border-radius: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+        border: 1px solid var(--primary);
+        color:grey;
+        margin-top: 10px;
+    
+}
+
+#btn{
+    margin-left: 5px;
+    padding:10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    min-width: 100px;
+    background-color: var(--submit);
+    font-size: 20px;
+    color: white;
+    border:2px solid transparent;
+    margin-bottom: 20px;
+    }
+
+    #button_sub{
+        text-align: center;
+    }
+
+#btn:hover{
+    color:var(--submit);
+    background-color: white;
+    border: 2px solid var(--submit);
+    cursor:pointer;
+}
+
+.del{
+    padding:10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: var(--error);
+    font-size: 20px;
+    color: white;
+    border:2px solid transparent;
+}
+
+.del:hover{
+    cursor: pointer;
+    background-color: white;
+    color:var(--error);
+    border:2px solid var(--error);
+}
+
+#error{
+    position: absolute;
+    left:50%;
+    transform: translate(-50%);
+    font-size: 20px;
+    color: var(--error);
+}
+
+#table_section{
+    overflow-x:auto;
+}
+
+
+
+table, th, td {
+    
+    border-collapse: separate;
+    padding:20px;
+    text-align: center;
+  }
+
+ th{
+    background-color: var(--primary);
+    color:white;
+    font-size: 25px;
+ }
+
+ td{
+    background-color:var(--secondary);
+    color:white;
+    font-size: 25px;
+ }
+
+  table{
+    width:63%;
+    margin: 100px auto;
+    border-spacing: 5px 5px;
+  }
+
+  ::placeholder { 
+    color: #3a1014;
+    opacity: 0.7; 
+  }
+
+ table tr .data{
+  background-color: red;
+  }
+
+  
+
+
+  

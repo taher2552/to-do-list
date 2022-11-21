@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="container">
+    <header>
+        <h1 class="dynamic">To do list</h1>
+    </header>
+<main class="header">
+    <input id="name" type="text" placeholder="enter your task" autocomplete="off">
+   <select name="" id="select">
+    <option class="option" value="">Select Priority</option>
+    <option class="option" value="high">High</option>
+    <option class="option" value="moderate">Moderate</option>
+    <option class="option" value="low">Low</option>
+   </select>
+
+   <select name="" id="filter">
+    <option  value="">Select to filter task</option>
+    <option class="filter_value" value="high">Red</option>
+    <option class="filter_value" value="moderate">Green</option>
+    <option class="filter_value" value="low">Yellow</option>
+   </select>
+
+
+  
+</main>
+<div id="button_sub"><button id="btn" >Enter</button></div>
+
+<section id="error"></section>
+
+
+
+
+
+
+<section id="table_section">
+    <table>
+        <thead>
+       
+        <tr>
+            <th class="head_name">To do list</th>
+            <th class="head_name">Priority</th>
+        </thead>
+
+        <tbody id="body"></tbody>
+    </table>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
