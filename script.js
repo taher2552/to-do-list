@@ -15,13 +15,20 @@ button.addEventListener("click", () => {
 
 
   if(task.value==""){
-   error.innerText="*please enter task";
+    error.innerText="*please enter task";
+    setTimeout(()=>{
+      error.innerText="";
+    },1000)
+   
    return;
   }
 
   if(prior==""){
 
-   error.innerText="*please select priority";
+    setTimeout(()=>{
+      error.innerText="*please select priority";
+      error.innerText="";
+    },1000)
    return;
 
   }
@@ -50,7 +57,7 @@ button.addEventListener("click", () => {
       <tr>`;
 
   task.value = "";
-  error.innerText="";
+ 
   
 
  
